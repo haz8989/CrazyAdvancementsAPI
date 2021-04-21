@@ -58,26 +58,6 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-install-plugin</artifactId>
-                <version>2.4</version>
-                <executions>
-                    <execution>
-                        <phase>compile</phase>
-                        <goals>
-                            <goal>install-file</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <file>lib/spigot-1.16.5-R0.1-SNAPSHOT.jar</file>
-                    <groupId>org.spigotmc</groupId>
-                    <artifactId>spigot</artifactId>
-                    <version>1.16.5-R0.1-SNAPSHOT</version>
-                    <packaging>jar</packaging>
-                </configuration>
-            </plugin>
         </plugins>
     </build>
 
@@ -86,7 +66,8 @@
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot</artifactId>
             <version>1.16.5-R0.1-SNAPSHOT</version>
-            <scope>provided</scope>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/spigot-1.16.5-R0.1-SNAPSHOT.jar</systemPath>
             <optional>true</optional>
         </dependency>
   </dependencies>
