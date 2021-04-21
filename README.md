@@ -1,7 +1,7 @@
 # CrazyAdvancementsAPI
 
 This is my fork of CrazyAdvancementsAPI<br>
-I've just cleaned up the project a little bit see commit: 1f29807ebeda5b3413c8ca0eece5353afd6b3aff
+I've just cleaned up the project a little bit see commit: 47fc3fc02bbccfb561d7defc7df213ff0740fc70
 
 You can get a build from the releases section https://github.com/haz8989/CrazyAdvancementsAPI/releases/tag/1.15
 
