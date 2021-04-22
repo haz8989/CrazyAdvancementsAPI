@@ -2,14 +2,10 @@
 jdk:
   - openjdk11
 before_install:
-  - echo before_install test echo
   - wget https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar -O BuildTools.jar
   - java -jar BuildTools.jar --rev 1.16.5
-  - echo after before_install test echo
 install:
-  - echo install test echo
   - mvn -B de.qaware.maven:go-offline-maven-plugin:resolve-dependencies
   - mvn -B install -DskipTests
   - rm -rf ~/.m2/repository/org/spigotmc/
   - rm -rf ~/.m2/repository/org/bukkit/
-  - echo after install test echo
